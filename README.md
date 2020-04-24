@@ -9,7 +9,7 @@ It then configures the elastic search service installing the Azure DevOps extens
 
 ## Get Started
 1. Clone this repository
-2. From the install directory of the Azure DevOps Server (default "C:\Program Files\Azure DevOps Server 2019\Search\") copy the "zip" folder to the cloned directory
+2. From the search directory of the Azure DevOps Server (default "C:\Program Files\Azure DevOps Server 2019\Search\") copy the "zip" folder to the cloned directory
 3. Run ```docker build --build-arg ES_USER=youresuser --build-arg ES_PASS=yourespass --pull --rm -t azuredevopselastic:latest "."``` (see known issues below)
 
 After the image is built, you can run it and [configure](https://docs.microsoft.com/en-us/azure/devops/project/search/administration?view=azure-devops-2019#separate-server) Azure DevOps Server's search to point to the containers external IP and port.
